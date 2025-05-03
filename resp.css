@@ -215,5 +215,16 @@ h2 {
   width: 82%;
 }
 }
-
+@media only screen and (max-width: 375px){
+  .hero {
+    height: 135vh;
+  }
+  h1, h1 b {
+    font-size: 35px;
+    line-height: 36px;
+  }
+  .btn-cta, section button {
+    width: 100%;
+}
+}
 
