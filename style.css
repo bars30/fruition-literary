@@ -6,7 +6,7 @@
 }
 :root {
  --main-color: #9E0404;
- --sec-color: #D7342E;
+ --sec-color: #9E0404;
 }
 .container {
  width: 92%;
@@ -20,9 +20,11 @@ button {
  border: none;
  border-radius: 30px;
  transition: all 0.25s ease-in;
+ font-weight: bold;
+ font-size: 16px;
 }
 button:hover {
- background-color: var(--main-color);
+ background-color: #c60e0e;
 }
 .sec-btn:hover {
  background-color: #fdefdf;
@@ -43,7 +45,8 @@ button:hover {
  width: 22%;
 }
 .toolbar-logo img {
- width: 11px;
+ width: 15px;
+ margin-right: 15px;
 }
 .toolbar-logo h2 {
  font-size: 20px;
@@ -65,19 +68,19 @@ button:hover {
 }
 .flower-img {
  position: absolute;
- top: 0;
- width: 28%;
+ top: -8px;
+ width: 30%;
  right: -15px;
 }
 img.flower-img2 {
  position: absolute;
- width: 15%;
+ width: 16%;
  bottom: -30px;
  z-index: 15;
  right: -15px;
 }
 img.flower-img3 {
- width: 13%;
+ width: 11%;
  position: absolute;
  bottom: -7px;
  left: -15px;
@@ -87,27 +90,27 @@ img.flower-img3 {
  height: 100vh;
  align-items: center;
  display: flex;
- background-image: url(./img/back.png);
+ background-image: url(./img/gr.png);
  background-size: cover;
  background-repeat: no-repeat;
  background-position: 50% 50%;
 }
 .hero-content {
- width: 55%;
- /* color: white; */
+ width: 57%;
 }
 h1, h1 b {
- font-size: 45px;
- line-height: 53px;
+  font-size: 67px;
+  line-height: 61px;
 }
 .hero-content p {
  width: 80%;
  margin: 15px 0;
 }
 .sec-btn {
- background-color: transparent;
- border: 2px solid #000000;
- color: black;
+  background-color: transparent;
+  border: 2px solid #000000;
+  color: black;
+  backdrop-filter: blur(10px);
 }
 .hero-btn-cont button:nth-child(1) {
  margin-right: 10px;
@@ -136,10 +139,23 @@ h1, h1 b {
 
 
 
+.cta-community {
+  background-color: #E63C42;
+  border-radius: 88px;
+  font-size: 13px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
-
-section, footer {
+section {
  padding: 75px 0;
+}
+footer {
+  padding: 50px 0;
 }
 h2 {
  text-align: left;
@@ -191,7 +207,7 @@ section .title-cont h3 {
  text-align: center;
 }
 .about-item img {
- width: 55px;
+  width: 15%;
 }
 .about-item h4 {
  font-family: 'Inter';
@@ -199,6 +215,8 @@ section .title-cont h3 {
 }
 section.how-it-works, .programs {
  background-color: #FAFAFA;
+ position: relative;
+ overflow: hidden;
 }
 .how-it-works-item-number {
  width: 40px;
@@ -273,8 +291,8 @@ section.how-it-works, .programs {
  position: absolute;
  left: 0;
  top: 2px;
- width: 16px;
- height: 16px;
+ width: 18px;
+ height: 18px;
  background-image: url('./img/check-mark.png');
  background-size: contain;
  background-repeat: no-repeat;
@@ -398,9 +416,7 @@ footer .container {
  display: flex;
  justify-content: space-between;
  margin-bottom: 10px;
-}
-footer {
- border-top: 2px solid #d7342e;
+ align-items: center;
 }
 .flower-img,
 .flower-img2,
@@ -409,7 +425,103 @@ footer {
   transition: transform 0.1s linear;
   pointer-events: none;
 }
+.how-it-works-flower {
+  position: absolute;
+    top: 15px;
+    width: 15%;
+    right: -12px;
+    transform: rotate(349deg);
+}
+img.how-it-works-flower2 {
+  position: absolute;
+  bottom: 25px;
+  left: -25px;
+  width: 15%;
+}
+.btn-cta {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+footer h3 {
+  margin-bottom: 7px;
+}
+.footer-cta label {
+  color: var(--main-color);
+  font-size: 17px;
+  margin-bottom: 5px;
+  display: block;
+}
+footer input {
+  margin: 0;
+}
+footer button {
+  border-radius: 5px;
+  padding: 10px 0;
+}
+.footer-cta-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-cta-form input {
+  width: 70%;
+}
+.footer-cta-form button {
+  width: 29%;
+}
+.footer-cta {
+  width: 33%;
+}
+.cta {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+}
+.cta h2 {
+  margin: auto;
+  width: fit-content;
+}
+.cta button {
+  background-color: white;
+  color: var(--main-color);
+  transition: all 0.2s ease-in;
+}
+.cta button:hover {
+  background-color: #ffcccc;
+}
+.cta p {
+  margin: 10px 0 15px;
+}
+.ecosystem {
+  position: relative;
+  background: linear-gradient(to right, #fdeef1 0%, #ffffff 100%);
+}
+.ecosystem .effect {
+  background-image: linear-gradient(to top, #fafafa, #ffffff00) !important;
+}
+.ecosystem .effect2 {
+  top: 0;
+  bottom: auto;
+  background-image: linear-gradient(to bottom, #fafafa, #ffffff00) !important;
+}
 
-
-
+.join-text b {
+  color: var(--sec-color);
+  margin-top: 15px;
+  display: block;
+}
+.cta-line {
+  font-weight: 700;
+  color: var(--main-color);
+  font-size: 17px;
+  margin: 0 0 15px 0!important;
+}
+.footer-copyright {
+  text-align: center;
+  display: flex;
+  justify-content: center !important;
+  margin-top: 20px;
+  font-size: 13px;
+}
 

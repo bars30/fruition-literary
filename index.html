@@ -12,12 +12,13 @@
 </head>
 <body>
  <header>
-  <img class="flower-img" src="./img/flower01.png" alt="">
+  <img class="flower-img" src="./img/flower010.png" alt="">
   <img class="flower-img2" src="./img/flower02.png" alt="">
   <img class="flower-img3" src="./img/flower03.png" alt="">
   <div class="toolbar">
    <div class="container">
     <div class="toolbar-logo">
+      <img src="./img/logo.png" alt="logo">
      <h2>Fruition Literary</h2>
     </div>
     <nav class="toolbar-nav">
@@ -32,12 +33,15 @@
      <h1>Where writers <br> become <b>authors</b></h1>
      <p>Transform your creative vision into published reality
       with our supportive community and innovative tools.</p>
+      <p class="cta-line">Bring Your Story to Life — Start Your Journey Today</p>
       <div class="hero-btn-cont">
        <button onclick="document.querySelector('.join').scrollIntoView({ behavior: 'smooth' })">Get Started</button>
        <button onclick="document.querySelector('.programs').scrollIntoView({ behavior: 'smooth' })" class="sec-btn">Explore Programs</button>
       </div>
       <div class="hero-ctn">
-       <img src="./img/cta.png" alt="community">
+       <div class="cta-community">
+        2.5k
+       </div>
        <p>Join our <b>thriving community</b> of writers on their journey to publication</p>
       </div>
      </div>
@@ -81,9 +85,12 @@
     </div>
 
    </div>
+   <button class="btn-cta">Discover How Fruition Literary Elevates Your Voice</button>
   </div>
  </section>
  <section class="how-it-works">
+  <img class="how-it-works-flower" src="./img/flower05.png" alt="">
+  <img class="how-it-works-flower2" src="./img/flower04.png" alt="">
   <div class="container">
    <div class="title-cont">
     <div class="title">
@@ -178,10 +185,12 @@
 
 
    </div>
-   <button onclick="document.querySelector('.programs').scrollIntoView({ behavior: 'smooth' })">Discover Your Path</button>
+   <button onclick="document.querySelector('.programs').scrollIntoView({ behavior: 'smooth' })">Ready to Publish? See Our Tailored Solutions</button>
   </div>
  </section>
  <section class="ecosystem">
+  <div class="effect"></div>
+  <div class="effect effect2"></div>
   <div class="container">
    <div class="title-cont">
     <div class="title">
@@ -248,7 +257,7 @@
     </div>
 
    </div>
-   <button onclick="document.querySelector('.join').scrollIntoView({ behavior: 'smooth' })">Join the ecosystem</button>
+   <button onclick="document.querySelector('.join').scrollIntoView({ behavior: 'smooth' })">Stay Inspired—Sign Up for Exclusive Insights</button>
   </div>
  </section>
  <section id="programs" class="programs">
@@ -313,6 +322,7 @@
 
 
    </div>
+   <button class="btn-cta">Explore Our Comprehensive Publishing Packages</button>
   </div>
  </section>
 
@@ -344,6 +354,7 @@
        <li>Monthly webinars with industry experts</li>
        <li>Completion certificates for all courses</li>
       </ul>
+      <b>You’re ready to be published. Join Fruition Literary today.</b>
     </div>
     <div class="join-form">
      <h4>Subscribe to Our Newsletter</h4>
@@ -358,18 +369,36 @@
         Email <br>
         <input type="email" name="email" placeholder="Enter your email">
        </label><br>
+    
        <button>Subscribe</button>
       </form>
     </div>
    </div>
   </div>
   </section>
+  <section class="cta">
+    <div class="container">
+      <h2>Let’s Talk About Your Project</h2>
+      <p>Have a question or ready to get started? We’re just a message away.</p>
+      <button>Start the Conversation</button>
+    </div>
+  </section>
 <footer>
   <div class="container">
-    <h3>Fruition Literary</h3>
-    <p>Transforming writers into published authors</p>
+    <div class="footer-info">
+      <h3>Fruition Literary</h3>
+      <p>Transforming writers into published authors</p>
+    </div>
+    <form class="footer-cta">
+      <label for="email"><h4>Connect With Us—Your Story Awaits</h4></label>
+      <div class="footer-cta-form">
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <button type="submit">Send</button>
+      </div>
+
+    </form>
   </div>
-  <div class="container">
+  <div class="container footer-copyright">
     <p>© 2025 Fruition Literary. All rights reserved.</p>
   </div>
 </footer>
