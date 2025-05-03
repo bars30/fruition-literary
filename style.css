@@ -12,16 +12,18 @@
  width: 92%;
  margin: auto;
 }
-
+p {
+  font-size: 17px;
+}
 button {
  background-color: var(--sec-color);
  color: white;
- padding: 10px 35px;
+ padding: 13px 35px;
  border: none;
  border-radius: 30px;
  transition: all 0.25s ease-in;
  font-weight: bold;
- font-size: 16px;
+ font-size: 17px;
 }
 button:hover {
  background-color: #c60e0e;
@@ -80,11 +82,11 @@ img.flower-img2 {
  right: -15px;
 }
 img.flower-img3 {
- width: 11%;
- position: absolute;
- bottom: -7px;
- left: -15px;
- z-index: 15;
+  width: 11%;
+  position: absolute;
+  top: -70px;
+  left: -15px;
+  z-index: 105;
 }
 .hero {
  height: 100vh;
@@ -196,6 +198,9 @@ section .title-cont h3 {
  text-align: left;
  color: #64666D;
  padding-bottom: 5px;
+}
+.about {
+  position: relative;
 }
 .about-cont {
  display: flex;
@@ -407,6 +412,7 @@ header {
  left: 0;
  right: 0;
  height: 100px;
+ z-index: 100;
  background-image: linear-gradient(to top, #ffffff, #ffffff00);
 }
 h1 b {

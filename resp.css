@@ -49,6 +49,27 @@
  .ecosystem-infographic img {
   width: 35%;
  }
+ h1, h1 b {
+  font-size: 53px;
+  line-height: 53px;  
+  }
+  button {
+    padding: 10px 30px;
+  }
+  .how-it-works-flower {
+    top: 25px;
+    width: 19%;
+  }
+  img.how-it-works-flower2 {
+    left: -25px;
+    width: 17%;
+  }
+  .effect {
+    height: 50px;
+  }
+  .footer-cta {
+    width: 45%;
+  }
 }
 @media only screen and (max-width: 800px){
  .toolbar-logo {
@@ -99,8 +120,14 @@
 section, footer {
  padding: 50px 0;
 }
-.hero {
- height: 90vh;
+.footer-cta {
+  width: 70%;
+  text-align: left;
+}
+.footer-info {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
 }
 }
 @media only screen and (max-width: 600px){
@@ -147,8 +174,24 @@ img.flower-img3 {
  width: 100%;
 }
 .ecosystem-infographic img {
- width: 57%;
+  width: 40%;
 }
+.how-it-works-flower {
+  width: 30%;
+}
+img.how-it-works-flower2 {
+  left: -25px;
+  width: 25%;
+  bottom: -6px;
+}
+.footer-cta {
+  width: 100%;
+}
+.btn-cta, section button {
+  font-size: 15px;
+  width: 68%;
+}
+
 }
 @media only screen and (max-width: 425px){
  .toolbar-logo {
@@ -164,6 +207,12 @@ h1, h1 b {
 }
 .flower-img {
  width: 49%;
+}
+h2 {
+  font-size: 25px;
+}
+.btn-cta, section button {
+  width: 82%;
 }
 }
 
