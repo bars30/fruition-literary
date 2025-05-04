@@ -47,12 +47,14 @@ button:hover {
  width: 22%;
 }
 .toolbar-logo img {
- width: 15px;
- margin-right: 15px;
+  width: 40%;
+  border-radius: 5px;
 }
 .toolbar-logo h2 {
- font-size: 20px;
- font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway';
+  text-transform: uppercase;
 }
 
 .toolbar-nav a {
@@ -158,6 +160,9 @@ section {
 }
 footer {
   padding: 50px 0;
+}
+footer img {
+  width: 50%;
 }
 h2 {
  text-align: left;
@@ -501,16 +506,8 @@ footer button {
 }
 .ecosystem {
   position: relative;
-  background: linear-gradient(to right, #fdeef1 0%, #ffffff 100%);
 }
-.ecosystem .effect {
-  background-image: linear-gradient(to top, #fafafa, #ffffff00) !important;
-}
-.ecosystem .effect2 {
-  top: 0;
-  bottom: auto;
-  background-image: linear-gradient(to bottom, #fafafa, #ffffff00) !important;
-}
+
 
 .join-text b {
   color: var(--sec-color);

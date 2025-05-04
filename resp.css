@@ -72,9 +72,12 @@
   }
 }
 @media only screen and (max-width: 800px){
- .toolbar-logo {
-  width: 48%;
+ .toolbar-logo img {
+  width: 60%;
  }
+ footer img {
+  width: 100%;
+}
  .hero-content {
   width: 77%;
  }
