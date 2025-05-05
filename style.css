@@ -154,7 +154,21 @@ h1, h1 b {
   justify-content: center;
   color: white;
 }
-
+.cta a {
+  background-color: white;
+  color: var(--main-color);
+  transition: all 0.2s ease-in;
+  padding: 13px 35px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  margin-top: 15px;
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
 section {
  padding: 75px 0;
 }
@@ -501,7 +515,7 @@ footer button {
   color: var(--main-color);
   transition: all 0.2s ease-in;
 }
-.cta button:hover {
+.cta a:hover {
   background-color: #ffcccc;
 }
 .cta p {
